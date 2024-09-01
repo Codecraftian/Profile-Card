@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vh;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
+    position: relative;
+}
+
+.profile-card::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(56, 6, 237, 0.932);
+    height: 33%;
+    width: 100%;
+    top: 0;
+    left: 0;
+border-radius: 24px 24px 0 0 ;
+}
+
+.image{
+ 
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(47, 56, 180, 0.84);
+    padding: 3px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-data .work{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile-card .media-button{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-button .facebook{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 0 8px;
+    background: blue;
+    color: white;
+}
+
+.profile-card .button{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button .button{
+    font-size: 14px;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 24px;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 10px;
+    color: white;
+    background-color: rgb(95, 95, 236);
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3sec ease;
+}
+
+.button .button:hover{
+    background-color: rgb(17, 17, 182);
+}
+
+.profile-card .follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    border-right: #080303bd;
+}
+
+.follow .data{
+    padding: 0px 22px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
